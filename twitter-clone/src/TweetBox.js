@@ -11,9 +11,9 @@ function TweetBox() {
             src='https://lh3.googleusercontent.com/ogw/ADGmqu9GElmcJVjw3GzbcE1wI1U9xhBf4fVroMKcCYsX=s32-c-mo'
           />
           <input placeholder="What's happening?" type='text'/>
-          <input placeholder="Enter image URL" type='text'/>
         </div>
-        <Button>Tweet</Button>
+        <input className='tweetBox__imageInput' placeholder="Optional: Enter image URL" type='text'/>
+        <Button className='tweetBox__tweetButton'>Tweet</Button>
       </form>
     </div>
   )
