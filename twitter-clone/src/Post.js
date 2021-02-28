@@ -20,25 +20,25 @@ function Post({
     <div className='post'>
       <div className='post__avatar'>
         <Avatar
-          src='https://lh3.googleusercontent.com/ogw/ADGmqu9GElmcJVjw3GzbcE1wI1U9xhBf4fVroMKcCYsX=s32-c-mo' 
+          src={avatar} 
         />
       </div>
       <div className='post__body'>
         <div className='post__header'>
           <div className='post__headerText'>
             <h3>
-              Changdae <span className='post__headerSpecial' >
-                <VerifiedUserIcon className='post__dagde' />
-                @Einsvision
+              {displayName} <span className='post__headerSpecial' >
+                {verified && <VerifiedUserIcon className='post__dagde' />}
+                @{username}
               </span>
             </h3>
           </div>
           <div className='post__headerDescription'>
-            <p>I chanllenge to build a Twitter Clone.</p>
+            <p>{text}</p>
           </div>
         </div>
         <img 
-          src='https://media.giphy.com/media/wKK8sVr6lo2zG11dUb/giphy.gif' 
+          src={image} 
           alt=''
         />
         <div className='post__footer'>
