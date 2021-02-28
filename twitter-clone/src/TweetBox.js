@@ -10,12 +10,18 @@ function TweetBox() {
   const sendTweet = e => {
     e.preventDefault();
 
+    // add to tweet messages on homepage
     db.collection('posts').add({
       displayName: 'changdae',
       username: 'einsvision',
       verified: true,
       text: tweetMessage,
-    })
+      image: tweetImage,
+      avatar: 'https://lh3.googleusercontent.com/ogw/ADGmqu9GElmcJVjw3GzbcE1wI1U9xhBf4fVroMKcCYsX=s32-c-mo'
+    });
+
+    setTweetMessage('');
+    setTweetImage('');
   }
 
   return (
